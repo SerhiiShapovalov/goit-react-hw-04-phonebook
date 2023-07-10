@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #434455;
+  margin-bottom: 10px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 400px;
+  }
+}

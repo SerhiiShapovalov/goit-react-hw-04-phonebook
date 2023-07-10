@@ -1,0 +1,78 @@
+.form {
+  width: 80%;
+  padding: 10px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: solid 2px #111111;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 70%;
+  height: 20px;
+  padding: 0 10px;
+
+  border: 1px solid #080808;
+  outline: none;
+
+  color: #434455;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: rgb(8, 8, 184);
+}
+
+.input::placeholder {
+  font-size: 12px;
+  color: #111111;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 30px;
+
+  background-color: #d1d1d1;
+  color: #434455;
+  font-family: inherit;
+  border: solid 1px #080808;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(8, 8, 184);
+  color: #d1d1d1;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    width: 400px;
+  }
+
+  .form {
+    width: 500px;
+  }
+}
